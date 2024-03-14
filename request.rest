@@ -1,0 +1,31 @@
+GET http://localhost:5001/tasks
+
+###
+GET http://localhost:5001/task/1
+
+###
+POST http://localhost:5001/task
+Content-Type: application/json
+
+{
+  "title": "Swimming",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ullam inventore odio illo",
+  "dueDate": "08-02-2024",
+  "isCompleted": false,
+  "isImportant": false
+}
+
+###
+PATCH http://localhost:5001/task/1
+Content-Type: application/json
+
+{
+  "title": "Go to the gym",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ullam inventore odio illo quaerat voluptas molestiae doloremque.",
+  "dueDate": "08-02-2024",
+  "isCompleted": false,
+  "isImportant": false
+}
+
+###
+DELETE http://localhost:5001/task/1
