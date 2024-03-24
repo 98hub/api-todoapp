@@ -7,6 +7,10 @@ dotenv.config();
 
 const app = express();
 
+app.get('/', (req, res) => {
+    res.send('Hello world! Welcome to API todoapp.')
+});
+
 app.use(cors());
 app.use(express.json());
 app.use(TaskRoute);
